@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./*.html'],
+  content: ['./*.html', './*.css'],
   theme: {
     screens: {
         sm: '480px',
@@ -16,7 +16,10 @@ module.exports = {
         },
         fontFamily: {
             sans: ['Rubik', 'san-serif']
-        }
+        },
+        backgroundImage: () => ({
+            'dots': "url('../images/bg-dots.svg')"
+        })
     },
   },
   plugins: [],
