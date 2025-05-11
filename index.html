@@ -39,7 +39,9 @@
                         class="tracking-widest hover:text-softRed"
                         >Download</a
                     >
-                    <a href="#faq-accordion" class="tracking-widest hover:text-softRed"
+                    <a
+                        href="#faq-accordion"
+                        class="tracking-widest hover:text-softRed"
                         >FAQ</a
                     >
 
@@ -50,16 +52,35 @@
                     >
                 </div>
 
-
                 <!-- Hamburger Button -->
-                <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+                <button
+                    id="menu-btn"
+                    class="z-30 block md:hidden focus:outline-none hamburger"
+                >
                     <span class="hamburger-top"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
                 </button>
             </div>
+
             <!-- Mobile Menu -->
-             
+            <div
+                id="menu"
+                class="fixed inset-0 z-20 flex flex-col items-center px-6 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue hidden"
+            >
+                <div class="w-full py-3 text-center">
+                    <a href="#features" class="block hover:text-softRed">Features</a>
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#download" class="block hover:text-softRed">Download</a>
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#faq-accordion" class="block hover:text-softRed">FAQ</a>
+                </div>
+                <div class="w-full py-3 text-center">
+                    <a href="#" class="block hover:text-softRed">Login</a>
+                </div>
+            </div>
         </nav>
 
         <!-- Hero Section -->
@@ -113,6 +134,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <!-- Features Section -->
 
@@ -294,6 +318,10 @@
             </div>
         </section>
 
+
+
+
+        
         <!-- Download Section -->
         <section id="download">
             <div class="container mx-auto px-6">
@@ -587,54 +615,95 @@
             </div>
         </section>
 
-
-
-
         <!-- Newsletter Section -->
-         <section id="newsletter" class="bg-softBlue">
+        <section id="newsletter" class="bg-softBlue">
             <!-- Main Container -->
-             <div class="max-w-lg mx-auto py-24">
-                <p class="mb-6 text-lg tracking-widest text-center text-white uppercase">
+            <div class="max-w-lg mx-auto py-24">
+                <p
+                    class="mb-6 text-lg tracking-widest text-center text-white uppercase"
+                >
                     35,000+ Already Joined
                 </p>
-                <h2 class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl">Stay up-to-date with what we're doing</h2>
+                <h2
+                    class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl"
+                >
+                    Stay up-to-date with what we're doing
+                </h2>
 
                 <!-- Form -->
-                 <form  class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0">
+                <form
+                    class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+                >
                     <!-- Input & Button Container -->
-                     <div class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0">
-                        <input type="text" class="flex-1 px-10 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0" placeholder="Enter your email address" />
+                    <div
+                        class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0"
+                    >
+                        <input
+                            type="text"
+                            class="flex-1 px-10 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0"
+                            placeholder="Enter your email address"
+                        />
 
-                        <input type="submit" class="inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90" value="Contact Us" />
-                     </div>
-                 </form>
-             </div>
-         </section>
+                        <input
+                            type="submit"
+                            class="inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90"
+                            value="Contact Us"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
 
-
-
-         <footer class="py-16 bg-veryDarkBlue">
+        <footer class="py-16 bg-veryDarkBlue">
             <!-- Flex Container -->
-             <div class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0">
+            <div
+                class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+            >
                 <!-- Logo/Menu Container -->
-                 <div class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishB">
-                    <img src="images/logo-bookmark-footer.svg" alt="" class="mb-1">
+                <div
+                    class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishB"
+                >
+                    <img
+                        src="images/logo-bookmark-footer.svg"
+                        alt=""
+                        class="mb-1"
+                    />
 
-                    <a href="#features" class="uppercase text-grayishBlue hover:text-softRed">Features</a>
-                    <a href="#download" class="uppercase text-grayishBlue hover:text-softRed">Download</a>
-                    <a href="#faq-accordion" class="uppercase text-grayishBlue hover:text-softRed">FAQ</a>
-                 </div>
+                    <a
+                        href="#features"
+                        class="uppercase text-grayishBlue hover:text-softRed"
+                        >Features</a
+                    >
+                    <a
+                        href="#download"
+                        class="uppercase text-grayishBlue hover:text-softRed"
+                        >Download</a
+                    >
+                    <a
+                        href="#faq-accordion"
+                        class="uppercase text-grayishBlue hover:text-softRed"
+                        >FAQ</a
+                    >
+                </div>
 
-                 <!-- Social Container -->
-                  <div class="flex space-x-10">
+                <!-- Social Container -->
+                <div class="flex space-x-10">
                     <a href="#">
-                        <img src="images/icon-facebook.svg" alt="" class="h-6 ficon">
+                        <img
+                            src="images/icon-facebook.svg"
+                            alt=""
+                            class="h-6 ficon"
+                        />
                     </a>
                     <a href="#">
-                        <img src="images/icon-twitter.svg" alt="" class="h-6 ficon">
+                        <img
+                            src="images/icon-twitter.svg"
+                            alt=""
+                            class="h-6 ficon"
+                        />
                     </a>
-                  </div>
-             </div>
-         </footer>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

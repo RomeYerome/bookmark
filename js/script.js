@@ -6,7 +6,17 @@ const panel1 = document.querySelector('.panel-1')
 const panel2 = document.querySelector('.panel-2')
 const panel3 = document.querySelector('.panel-3')
 
+
+const menuBtn = document.getElementById('menu-btn');
+
+const mobileMenu = document.getElementById('menu');
+
+
+
+
 // FUNCTIONS
+
+// FN to tab through FAQ accordion
 const onTabClick = (e) => {
     console.log(e.target)
     // Remove red underline from all tabs
@@ -31,5 +41,22 @@ const onTabClick = (e) => {
     })
 }
 
+
+
+// FN to toggle hamburger menuBtn and mobile Menu
+const toggleMenu = (e) => {
+    menuBtn.classList.toggle('open')
+    mobileMenu.classList.toggle('hidden')
+}
+
+
+// FN to open mobile menu
+const toggleMobileMenu = (e) => {
+    mobile
+}
+
+
 // EVENT LISTENERS
 tabs.forEach((tab) => tab.addEventListener('click', onTabClick))
+
+menuBtn.addEventListener('click', toggleMenu);
